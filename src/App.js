@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
 
-  const [team, setTeam] = useState([
+  const [teams, setTeams] = useState([
     {
       id: 1,
       name: "Robert Gordon",
@@ -16,24 +16,24 @@ function App() {
     }
   ]);
 
-  const addTeam = team => {
+  const addNewTeam = team => {
     const newTeam = {
       id: Date.now(),
       name: team.name,
       email: team.email,
       role: team.role
     };
-    setTeam([...team, newTeam]);
-  }
+    setTeams([...teams, newTeam]);
+  };
 
   return (
     <div className="App">
-      <header className="App-header">
+
         <h1>Go Team!</h1>
-      </header>
+
     <div className='team-cards'>
-      <Form addTeam={addTeam}/>
-      <Team team={team} />
+      <Form addNewTeam={addNewTeam}/>
+      <Team teams={teams} />
     </div>
     </div>
   );
