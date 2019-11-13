@@ -1,22 +1,105 @@
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  margin: 10px;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* justify-content: center; */
+  font-size: 80%;
   color: white;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.team-form {
+  display: flex;
+  flex-direction: column;
+  height: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: lightsteelblue;
+}
+
+form {
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  margin: 10px;
+}
+
+form button {
+  width: 100px;
+  margin: 10px auto;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid red;
+  margin-top: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 270px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  margin: 30px;
+  margin-bottom: 130px;
+  padding: 10px;
+  box-shadow: 2px 2px darkgray;
+  color: black;
+}
+
+.card .img-wrap{
+  width: 175px;
+  height: 175px;
+  box-shadow: 2px 2px black;
+  margin-top: -100px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.img-wrap img{
+  /* width: 100%; */
+  height: 100%;
+  border-radius: 5px;
+}
+
+.card .edit {
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
