@@ -48,6 +48,7 @@ function App() {
 
   const editTeam = newTeam =>{
     let teamCopy = [...teams];
+    console.log(newTeam)
     for (let i = 0; i < teamCopy.length; i++){
       if (teamCopy[i].id === newTeam.id) {
         teamCopy.splice(i, 1, newTeam)
