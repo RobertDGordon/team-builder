@@ -1,12 +1,13 @@
 h1 {
   font-size: 3rem;
   font-weight: bold;
+  margin: 15px;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  margin: 2px;
+  margin: 5px;
 }
 
 h3 {
@@ -16,8 +17,14 @@ p {
   margin: 10px;
 }
 
+body {
+  background-attachment: fixed;
+  background-image: url(https://wallpaperaccess.com/full/39632.jpg);
+  background-size: cover;
+}
+
 .App {
-  background-color: #282c34;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,7 +70,7 @@ form button {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 100px;
 }
 
@@ -71,6 +78,7 @@ form button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 250px;
   height: 270px;
   border: 1px solid black;
@@ -98,8 +106,37 @@ form button {
   border-radius: 5px;
 }
 
+.card .info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10px;
+  margin-top: -160px;
+}
+
 .card .edit {
   text-align: center;
   display: flex;
   align-items: center;
+}
+
+.email {
+  font-style: italic;
+}
+
+.info form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -280px;
+}
+
+.info form input {
+  margin: 10px;
+}
+
+.info form button {
+  width: 100px;
+  margin: 10px auto;
 }
